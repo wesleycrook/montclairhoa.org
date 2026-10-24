@@ -1,0 +1,386 @@
+/*!
+ * Dynamic Styles
+ * Author UI Department of Realtyna Inc.
+ */
+
+body{
+    color: #000000;
+    font-family: Karla, sans-serif;
+}
+
+/*Font*/
+
+h1,h2,h3,h4,h5,h6,
+.re-page-title,
+.re-title-default,
+.widget-title
+{
+  font-family: Montserrat, sans-serif;
+}
+
+#header
+{
+  font-family: Montserrat, sans-serif;
+}
+
+.wpl_search_from_box .wpl_search_from_box_top label,.wpl-gen-form-label,
+.wpl_prp_listing_location
+{
+   font-family: Karla, sans-serif;
+}
+
+.wpl_search_from_box .wpl_search_from_box_top .wpl_search_reset,
+.re-recent-post-content .read-more,
+.re-contact-form-style1 .wpcf7-submit
+{
+    font-family: Montserrat, sans-serif;
+}
+
+/*Color*/
+
+.widget-title,
+.re-site-title a,
+.re-site-description
+{
+    color: #0d3ca3;
+}
+.re-nav
+{
+    background-color: #0d3ca3;
+}
+.re-header-contact-info-text>a
+{
+    color: #0d3ca3;
+}
+.re-header-contact-info>[class*="re-icon-"]
+{
+    color: #ec1c2a;
+}
+.re-btn-default
+{
+    font-family: Montserrat, sans-serif;
+    background-color: #0d3ca3;
+    border-color: #0d3ca3;
+}
+.re-btn-default:hover
+{
+    color: #0d3ca3;
+}
+.re-page-title,.re-title-default,
+.re-header-search .re-icon-search,.re-header-type-3 .re-user-links a
+{
+    color: #0d3ca3;
+}
+.wpl_search_from_box.advanced .wpl_search_from_box_top .search_submit_box{
+    color: #0d3ca3;
+}
+.wpl_search_from_box.advanced .wpl_search_from_box_top .wpl_search_field_container.wpl_search_field_listings.radios_type input:checked + label,
+.wpl_search_from_box.advanced .wpl_search_from_box_top .wpl_search_field_container.wpl_search_field_listings.radios_any_type input:checked + label,
+.wpl_search_from_box.advanced .wpl_search_from_box_top .wpl_search_field_container.wpl_search_field_listings.radios_type label:hover,
+.wpl_search_from_box.advanced .wpl_search_from_box_top .wpl_search_field_container.wpl_search_field_listings.radios_any_type label:hover{
+    color: #0d3ca3;
+}
+
+.btn.btn-primary,
+.wpl_addon_membership_container button,
+.wpl_addon_membership_container .btn-primary,
+#wpl_membership_register_button,
+.wpl_property_manager .wpl-wp .wpl-button.button-1,
+.wpl_addon_membership_container .wpl-button.button-1,
+.wpl_addon_membership_container #wpl_change_password_submit,
+.wpl_user_contact_container .form-field input[type="submit"]{
+    background: #0d3ca3;
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary.focus, .btn.btn-primary:active, .btn.btn-primary.active,
+.wpl_addon_membership_container button:hover, .wpl_addon_membership_container button:focus, .wpl_addon_membership_container button.focus,
+.wpl_addon_membership_container button:active, .wpl_addon_membership_container button.active,
+.wpl_addon_membership_container .btn-primary:hover, .wpl_addon_membership_container .btn-primary:focus, .wpl_addon_membership_container .btn-primary.focus,
+.wpl_addon_membership_container .btn-primary:active, .wpl_addon_membership_container .btn-primary.active,
+#wpl_membership_register_button:hover, #wpl_membership_register_button:focus, #wpl_membership_register_button.focus,
+#wpl_membership_register_button:active, #wpl_membership_register_button.active,
+.wpl_property_manager .wpl-wp .wpl-button.button-1:hover, .wpl_property_manager .wpl-wp .wpl-button.button-1:focus, .wpl_property_manager .wpl-wp .wpl-button.button-1.focus,
+.wpl_property_manager .wpl-wp .wpl-button.button-1:active, .wpl_property_manager .wpl-wp .wpl-button.button-1.active,
+.wpl_addon_membership_container .wpl-button.button-1:hover, .wpl_addon_membership_container .wpl-button.button-1:focus,
+.wpl_addon_membership_container .wpl-button.button-1.focus, .wpl_addon_membership_container .wpl-button.button-1:active, .wpl_addon_membership_container .wpl-button.button-1.active,
+.wpl_addon_membership_container #wpl_change_password_submit:hover, .wpl_addon_membership_container #wpl_change_password_submit:focus, .wpl_addon_membership_container #wpl_change_password_submit.focus,
+.wpl_addon_membership_container #wpl_change_password_submit:active, .wpl_addon_membership_container #wpl_change_password_submit.active,
+.wpl_prp_show_container .listing_contact input[type="button"]:hover, .wpl_prp_show_container .listing_contact input.btn.btn-primary[type="submit"]:hover,
+.wpl_user_contact_container .form-field input[type="submit"]:hover{
+    color: #0d3ca3;
+    border-color: #0d3ca3;
+}
+
+.wpl_prp_position3_boxes_title,
+.wpl_prp_position_contact_title,
+.wpl_prp_show_detail_boxes_title,
+.wpl_prp_right_boxes_title,
+.wpl_prp_right_boxes_title span,
+.pwizard-wp header h2, .pmanager-wp header h2,
+.pmanager-wp .properties-wp .propery-wp .info-action-wp .plist_price,
+.wpl_addon_membership_container .wpl_dashboard_header,
+.wpl_addon_membership_container .wpl_memberships_label,
+.wpl_addon_membership_container .wpl_membership_addon_label,
+.wpl-membership-wpluser-head .wpl_activity_title,
+#wpl_dashboard_bottom_container .wpl_activity_title,
+.wpl-ewallet-balance{
+    color: #0d3ca3 !important;
+}
+
+.wpl_prp_show_container .wpl_agent_info .company_details .company_name,
+.wpl_prp_show_container .wpl_agent_info .email:before {
+     color: #0d3ca3;
+}
+.wpl_prp_show_container .wpl-listing-results-links-cnt a{
+     color: #0d3ca3;
+}
+.wpl_prp_show_container .wpl_prp_show_detail_boxes .rows span{
+     color: #0d3ca3 !important;
+}
+.wpl_prp_show_container .wpl_prp_show_tabs-maps.wpl_prp_left_box .tabs{
+     border-color: #0d3ca3;
+}
+.wpl_prp_show_container .wpl_prp_show_tabs-maps.wpl_prp_left_box .tabs li.active a{
+     background: #0d3ca3;
+}
+.wpl_property_listing_container .wpl_prp_top .wpl_prp_top_boxes.back {
+     background: #0d3ca3;
+}
+#wpl_profile_listing_container .wpl_profile_container .wpl_profile_picture div.back{
+    background: #0d3ca3 !important;
+}
+.wpl_agent_info_c>ul li:before, ul.wpl_agent_info_r li:before{
+    color: #0d3ca3;
+}
+.wpl_agent_info .company, .wpl_agent_info .company_details{
+    color: #0d3ca3;
+}
+.wpl_mcalc_container .form-result .text-box {
+    color: #ec1c2a;
+}
+.wpl_mcalc_container .form-result .wpl-mortgage-symbol {
+    color: #0d3ca3;
+}
+.wpl-gen-tab-wp.wpl-complex-tabs-wp, .wpl-crm-form.wpl-crm-form-frontend .wpl-crm-grid-tab{
+    border-bottom-color: #0d3ca3;
+}
+.wpl-gen-tab-wp.wpl-complex-tabs-wp ul li.wpl-gen-tab-active-parent a.wpl-gen-tab-active,
+.wpl-crm-form.wpl-crm-form-frontend .wpl-crm-grid-tab ul li.wpl-gen-tab-active-parent a.wpl-gen-tab-active {
+    background: #0d3ca3;
+}
+.wpl-gen-tab-wp.wpl-complex-tabs-wp ul li.wpl-gen-tab-active-parent a.wpl-gen-tab-active span,
+.wpl-crm-form.wpl-crm-form-frontend .wpl-crm-grid-tab ul li.wpl-gen-tab-active-parent a.wpl-gen-tab-active span{
+    background: #ec1c2a;
+}
+.wpl-crm-form.wpl-crm-form-frontend .wpl-crm-form-next-btn,
+.wpl-crm-form.wpl-crm-form-frontend .wpl-crm-form-submit-btn{
+    background: #0d3ca3;
+}
+.wpl-crm-form.wpl-crm-form-frontend .wpl-crm-form-next-btn:hover,
+.wpl-crm-form.wpl-crm-form-frontend .wpl-crm-form-submit-btn:hover{
+    color: #0d3ca3;
+    border-color: #0d3ca3;
+}
+.wpl_addon_membership_container .wpl_dashboard_side2 .wpl_dashboard_links li:not(.properties_link):hover{
+    background: #0d3ca3;
+}
+
+.wpl_search_widget_links .wpl-save-search-wp a:after ,
+.wpl_search_widget_links .wpl-rss-wp a:after {
+    color: #0d3ca3;
+}
+.wpl_search_widget_links .wpl-save-search-wp a:hover:after,
+.wpl_search_widget_links .wpl-rss-wp a:hover:after{
+    color: #ec1c2a;
+}
+.re-search .search_submit_box
+{
+    background: #0d3ca3;
+}
+#wpl_login_form button[type="submit"]:hover{
+    border-color: #0d3ca3;
+    background: #0d3ca3;
+}
+.wpl_subscription_form_account_info_container legend{
+    color: #0d3ca3;
+}
+.wpl_addon_membership_container .wpl_dashboard_header:before,
+.wpl_addon_membership_container .wpl_memberships_label:before,
+.wpl_addon_membership_container .wpl_membership_addon_label:before {
+     background: #ec1c2a;
+}
+.wpl-membership-wpluser-head .wpl_activity_title:after,
+#wpl_dashboard_bottom_container .wpl_activity_title:after{
+     background: #ec1c2a;
+}
+.re-title-separator,.widget-title:after
+{
+    background-color: #ec1c2a;
+}
+
+.wpl_prp_show_container .wpl_prp_container_content_title .wpl_prp_top_box_details .price_box {
+    background: #ec1c2a;
+}
+.wpl_prp_show_container .location_build_up:before{
+     color: #ec1c2a;
+}
+.wpl_prp_show_container .wpl-gallery-pshow-wp .lSSlideOuter .lSGallery > li.active img{
+     border-color: #ec1c2a !important;
+}
+.wpl-ewallet-balance span{
+    color: #ec1c2a;
+}
+
+#wpl_prp_show_container .wpl_prp_position3_boxes_title:after,
+#wpl_prp_show_container .wpl_prp_position_contact_title:after,
+#wpl_prp_show_container .wpl_prp_show_detail_boxes_title:after,
+#wpl_prp_show_container .wpl_prp_right_boxes_title:after{
+    background: #ec1c2a !important;
+}
+
+.wpl-booking-button-date>a{
+    background: #ec1c2a;
+}
+.wpl-booking-button-date>a:hover{
+    color: #ec1c2a;
+    border-color: #ec1c2a;
+}
+.wpl_pagination_container .pagination li.active a,
+.wpl_property_listing_container.wpl-property-listing-mapview .wpl_pagination_container .pagination li.active a,
+.pagination-wp .pagination li.active a,
+.wpl-profile-listing-wp .wpl_pagination_container .pagination li.active a{
+     color: #ec1c2a !important;
+     border-color: #0d3ca3 !important;
+}
+.pwizard-wp.wpl_view_container .side-content-wp input[type='checkbox']:checked + label:before,
+.wpl-subscription-form-container input[type='checkbox']:checked + label:before,
+.wpl-login-form-remember-wp input[type='checkbox']:checked + label:before {
+     background: #ec1c2a;
+}
+.pmanager-wp #wpl_listings_top_tabs_container .wpl-tabs li.wpl-selected-tab a{
+    color: #ec1c2a;
+}
+#wpl_register_info strong:first-child:after{
+    background: #ec1c2a;
+}
+
+.re-section-call-us
+{
+    color: #0d3ca3;
+}
+a{
+    color: #00aeef;
+}
+a:hover{
+    color: #0bacdd;
+}
+.re-header-type-2 .re-user-links a{
+    border-color: #00aeef;
+}
+.re-header-type-2 .re-user-links a:hover,
+.re-header-type-2 .re-user-links a:focus{
+    color: #0bacdd;
+    border-color: #0bacdd;
+}
+.vc_separator.vc_sep_color_juicy_pink .vc_sep_line {
+    color: #ec1c2a;
+}
+.wpl_sort_options_container .wpl-sort-options-selectbox select,
+.wpl_sort_options_container .wpl-sort-options-selectbox:after{
+     color: #00aeef;
+}
+.wpl_list_grid_switcher div.active:before,
+.wpl_list_grid_switcher a.active:before,
+.wpl_list_grid_switcher a.active,
+.wpl_list_grid_switcher div.active,
+.wpl_list_grid_switcher.wpl-list-grid-switcher-icon-text div.active:before,
+.wpl_list_grid_switcher.wpl-list-grid-switcher-icon-text a.active:before,
+.wpl_list_grid_switcher.wpl-list-grid-switcher-icon-text a.active,
+.wpl_list_grid_switcher.wpl-list-grid-switcher-icon-text div.active
+{
+    color: #00aeef !important;
+}
+.wpl_list_grid_switcher .map_view:before,
+.wpl_list_grid_switcher.wpl-list-grid-switcher-icon-text .map_view:before {
+    color: #ec1c2a !important;
+}
+.wpl_list_grid_switcher .map_view,
+.wpl_list_grid_switcher.wpl-list-grid-switcher-icon-text .map_view{
+    color: #0d3ca3;
+}
+.wpl_carousel_container .simple_list.wpl-plugin-owl .right_section .location:before,
+.wpl_property_listing_container .view_detail .wpl_prp_title,
+.wpl_agents_widget_container .wpl_profile_container .wpl_profile_container_title .title{
+    color: #00aeef;
+}
+.wpl_property_listing_container .view_detail .wpl_prp_title:hover,
+.wpl_agents_widget_container .wpl_profile_container .wpl_profile_container_title .title:hover{
+    color:#0bacdd;
+}
+.wpl_carousel_container .simple_list.wpl-plugin-owl .right_section .more_info{
+    background: #00aeef;
+}
+.re-carousel .slick-dots li.slick-active button{
+     background-color: #ec1c2a;
+}
+
+#footer
+{
+    background-color: #1c2029;
+}
+.footer-overlay
+{
+    background-color: #1c2029;
+    opacity: 0.5;
+}
+
+.post .entry-title a
+{
+   color: #1e73be;
+   font-size: 20px;
+}
+.single .post .entry-title a
+{
+   font-size: 28px;
+}
+
+/*Container*/
+.re-container
+{
+    max-width: 1170px;
+}
+
+/*Font-size*/
+h1
+{
+    font-size: 30px;
+}
+h2
+{
+    font-size: 28px;
+}
+h3
+{
+    font-size: 24px;
+}
+h4
+{
+    font-size: 20px;
+}
+h5
+{
+    font-size: 16px;
+}
+h6
+{
+    font-size: 16px;
+}
+
+body
+{
+    font-size: 18px;
+}
+
+.wpl_prp_show_container
+{
+    font-size: 18px;
+}
