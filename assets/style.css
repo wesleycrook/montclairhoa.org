@@ -1,0 +1,481 @@
+/* Montclair HOA */
+
+@font-face {
+  font-family: "Pirata One";
+  src: url("pirata-one.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --ink: #1d2433;
+  --muted: #5d6677;
+  --navy: #1c2e4d;
+  --navy-dark: #121d33;
+  --brass: #9a7843;
+  --paper: #fbfaf7;
+  --wash: #f3eee4;
+  --line: #e4ddd0;
+  --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --wide: 68rem;
+  --narrow: 44rem;
+  --gutter: 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1.0625rem/1.65 var(--sans);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Header */
+
+body > header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2.5rem;
+  padding: 1.25rem max(var(--gutter), (100% - var(--wide)) / 2);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.brand {
+  color: var(--navy);
+  font: 2.3rem/1 "Pirata One", var(--serif);
+  text-decoration: none;
+}
+
+.brand small {
+  display: block;
+  margin-top: .45rem;
+  color: var(--brass);
+  font: 600 .64rem/1 var(--sans);
+  letter-spacing: .26em;
+  text-transform: uppercase;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1.5rem;
+}
+
+header nav a {
+  padding: .3rem 0;
+  border-bottom: 1px solid transparent;
+  color: var(--ink);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header nav a:hover,
+header nav a[aria-current] {
+  border-bottom-color: var(--brass);
+  color: var(--navy);
+}
+
+/* Page content */
+
+main {
+  width: min(100% - 2 * var(--gutter), var(--narrow));
+  margin: 0 auto;
+  padding: 3.5rem 0 5rem;
+}
+
+h1, h2, h3 {
+  color: var(--navy);
+  font-family: var(--serif);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0 0 1.75rem;
+  font-size: clamp(2.2rem, 1.7rem + 2vw, 2.9rem);
+  letter-spacing: -.01em;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 2px;
+  margin-top: 1.1rem;
+  background: var(--brass);
+}
+
+h2 {
+  clear: both;
+  margin: 3rem 0 1rem;
+  font-size: 1.6rem;
+}
+
+h3 {
+  margin: 2rem 0 .4rem;
+  font-size: 1.2rem;
+}
+
+p, ul, ol, dl {
+  margin: 0 0 1.25rem;
+}
+
+a {
+  color: var(--navy);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+
+a:hover {
+  color: var(--brass);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.crumbs {
+  margin-bottom: .6rem;
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.crumbs a {
+  color: var(--brass);
+  text-decoration: none;
+}
+
+.lede {
+  font: 1.3rem/1.55 var(--serif);
+}
+
+.note {
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--brass);
+  background: var(--wash);
+}
+
+/* Home page photo, wider than the text column */
+.hero {
+  display: block;
+  width: min(100vw - 2 * var(--gutter), var(--wide));
+  max-width: none;
+  margin: -1.5rem 0 3rem 50%;
+  transform: translateX(-50%);
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  object-position: 50% 35%;
+  border-radius: 4px;
+}
+
+.logo {
+  float: right;
+  width: 40%;
+  max-width: 13rem;
+  margin: .3rem 0 1rem 1.75rem;
+  border-radius: 4px;
+}
+
+/* Label / value rows: hours, rates, phone numbers */
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-top: 1px solid var(--line);
+}
+
+dt, dd {
+  margin: 0;
+  padding: .7rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+dd {
+  padding-left: 1.5rem;
+  text-align: right;
+}
+
+/* Lists of documents and pages */
+
+.links {
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.links li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .75rem 0;
+  border-bottom: 1px solid var(--line);
+  font: 1.1rem/1.4 var(--serif);
+}
+
+.links a {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.links a::after {
+  align-self: center;
+  color: var(--muted);
+  font: 600 .68rem var(--sans);
+  letter-spacing: .12em;
+}
+
+.links a[href$=".pdf"]::after { content: "PDF"; }
+.links a[href$=".docx"]::after { content: "WORD"; }
+.links a[href$=".html"]::after { content: "→"; font-size: 1rem; }
+
+.links em {
+  align-self: center;
+  color: var(--muted);
+  font: italic .9rem var(--serif);
+  text-align: right;
+}
+
+/* Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards li {
+  position: relative;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--muted);
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+.cards li:hover {
+  border-color: var(--brass);
+}
+
+.cards a {
+  display: block;
+  margin-bottom: .3rem;
+  font: 1.25rem/1.3 var(--serif);
+  text-decoration: none;
+}
+
+/* Makes the whole card clickable */
+.cards a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* People */
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.25rem 0;
+  margin: 2.5rem 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.people li {
+  flex: 0 0 33.333%;
+  padding: 0 .5rem;
+}
+
+/* A list of exactly four people fits on one row */
+@media (min-width: 40rem) {
+  .people li:first-child:nth-last-child(4),
+  .people li:first-child:nth-last-child(4) ~ li {
+    flex-basis: 25%;
+  }
+}
+
+.people img {
+  display: block;
+  width: 7.5rem;
+  aspect-ratio: 1;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 5px var(--line);
+}
+
+.people strong {
+  display: block;
+  color: var(--ink);
+  font: 1.15rem/1.3 var(--serif);
+}
+
+.people a {
+  display: block;
+  margin-top: .3rem;
+  font-size: .85rem;
+  overflow-wrap: anywhere;
+}
+
+/* Payment buttons. Each is enabled by the Converge script right after it. */
+
+button {
+  padding: .95rem 1.75rem;
+  border: 0;
+  border-radius: 3px;
+  background: var(--navy);
+  color: #fff;
+  font: 600 .82rem var(--sans);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--brass);
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: progress;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* Footer */
+
+body > footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 2rem;
+  padding: 3.5rem max(var(--gutter), (100% - var(--wide)) / 2) 2.5rem;
+  background: var(--navy-dark);
+  color: #c3cad8;
+  font-size: .92rem;
+  line-height: 1.7;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer strong {
+  display: block;
+  margin-bottom: .35rem;
+  color: #fff;
+  font: 1.15rem var(--serif);
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #dcc394;
+}
+
+footer p:last-child {
+  grid-column: 1 / -1;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgb(255 255 255 / .12);
+  font-size: .8rem;
+}
+
+/* Small screens */
+
+@media (max-width: 40rem) {
+  body > header,
+  header nav {
+    justify-content: center;
+  }
+
+  body > header,
+  main,
+  body > footer {
+    text-align: center;
+  }
+
+  h1::after {
+    margin-inline: auto;
+  }
+
+  main ul:not([class]) {
+    padding: 0;
+    list-style: none;
+  }
+
+  .links {
+    text-align: left;
+  }
+
+  .note {
+    border-left: 0;
+    border-top: 3px solid var(--brass);
+  }
+
+  dl {
+    grid-template-columns: 1fr;
+  }
+
+  dt {
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-weight: 600;
+  }
+
+  dd {
+    padding: .1rem 0 .7rem;
+    text-align: center;
+  }
+
+  .people li {
+    flex-basis: 50%;
+  }
+
+  .logo {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0 auto 1.5rem;
+  }
+}
