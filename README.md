@@ -6,7 +6,7 @@ Website for the Montclair Association, Inc. in Augusta, Georgia. It is plain HTM
 
 - Each page is an HTML file named after the page.
 - Child pages live in a folder named after their parent page. For example, `pool.html` is the parent of `pool/pool-payment-portals.html`, whose own child pages are in `pool/pool-payment-portals/`.
-- `assets/` holds the stylesheet, the font for the Montclair wordmark, and the images.
+- `assets/` holds the stylesheet, the font for the Montclair wordmark, the favicon (the wordmark's "M"), and the images.
 - `documents/` holds the PDFs and Word files the pages link to.
 
 ## Common updates
