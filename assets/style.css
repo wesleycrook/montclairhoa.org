@@ -188,6 +188,70 @@ img {
   border-radius: 4px;
 }
 
+/* Property map, as wide as the header; map.js adds dragging and zooming */
+.map {
+  position: relative;
+  width: min(100vw - 2 * var(--gutter), var(--wide));
+  margin: 0 0 1.25rem 50%;
+  transform: translateX(-50%);
+  aspect-ratio: 1224 / 1013;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fbfaf7;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.map:active {
+  cursor: grabbing;
+}
+
+.map:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+.map img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+.map-controls {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.map-controls[hidden] {
+  display: none;
+}
+
+.map-controls button {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--navy);
+  font: 600 1.15rem/1 var(--sans);
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.map-controls button:hover {
+  background: #fff;
+  color: var(--brass);
+}
+
 .logo {
   float: right;
   width: 40%;
@@ -427,6 +491,18 @@ footer p:last-child {
   body > header,
   header nav {
     justify-content: center;
+  }
+
+  .map-controls {
+    top: .5rem;
+    right: .5rem;
+    gap: .25rem;
+  }
+
+  .map-controls button {
+    width: 1.85rem;
+    height: 1.85rem;
+    font-size: 1rem;
   }
 
   body > header,

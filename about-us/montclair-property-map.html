@@ -29,11 +29,19 @@
   <p class="crumbs"><a href="../about-us.html">About Us</a></p>
   <h1>Montclair Property Map</h1>
 
-  <p class="note">This map is provided by GIS and should only be used as a guideline, not for exact accuracy.</p>
+  <p class="note">This map is traced from Augusta-Richmond County GIS records. Use it as a guideline only; it is not a survey.</p>
 
-  <p><a href="../assets/images/property-map.jpg"><img src="../assets/images/property-map.jpg" alt="Aerial map of the Montclair neighborhood with property lines outlined in red"></a></p>
+  <div class="map" tabindex="0" role="region" aria-label="Property map">
+    <img src="../assets/images/property-map.svg" width="1224" height="1013" alt="Map of Montclair showing every lot with its house number, the neighborhood streets, and nearby Pleasant Home Road, Warren Road and Warren Bridge Road">
+    <div class="map-controls" hidden>
+      <button type="button" value="in" aria-label="Zoom in">+</button>
+      <button type="button" value="out" aria-label="Zoom out">−</button>
+      <button type="button" value="reset" aria-label="Show the whole map">↺</button>
+    </div>
+  </div>
+  <script src="../assets/map.js"></script>
 
-  <p>Select the map to view it at full size.</p>
+  <p>Click the map, then scroll or pinch to zoom in on the house numbers and drag to move around. You can also <a href="../assets/images/property-map.svg" target="_blank">open the map on its own</a> or see the county's <a href="../assets/images/property-map.jpg" target="_blank">aerial GIS map</a>.</p>
 </main>
 
 <footer>
